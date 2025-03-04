@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <title>ECOMM</title>
+</head>
+<body>
+  <header>
+    <!--logo/name-->
+    <div class="logo" style="display: flex;">
+        <img src="company logo.jpeg" alt="logo" height="80px" width="80px">  
+      <div class="companyname">
+        <h1>KIAMBA</h1>
+      </div>
+
+    </div>
+  <!--navigations-->
+    <div class="navigations">
+      <nav>
+          <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="buy-new.html">new inventory</a></li>
+              <li><a href="pre-owned.html">pre-owned</a></li>
+              <li><a href="#">Financing</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+    <!--buy new or pre-owned-->
+    <div class="container">
+      <button>
+        <a href="buy-new.html" class="box-new"><h2>Buy new</h2></a>
+      </button>
+      <button>
+        <a href="pre-owned.html" class="box-pre-owned"><h2>Pre-owned</h2></a>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="car_pic">
+      <h1 style="display: flex; justify-content: center;">Best Deals</h1>
+      <hr>
+      <h2 style="display: flex; justify-content: center;">Amazing cars at amazing prices</h2>
+      <!--main image-->
+        <div class="main" style="display: flex; gap: 50px; justify-content: flex-start; padding-left: 10%;">
+          <img  id="mainimage" src="main note.jpeg" alt="1st cover" height="700px" width="800px">
+          <!--car details-->
+            <div class="cardetails">
+                <h1>Car Details</h1>
+                <h2>Nissan Note</h2>
+                <h3>2017 model</h3>
+                <h3>milage 120000</h3>
+                <h3>Fuel = petrol</h3>
+                <h3>color black</h3>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--thumbnails-->
+      <div class="allthumbnails" style="display: flex;  justify-content: space-between;">
+        <div class="thumbnails">
+          <img src="thumbnail 1.jpeg" alt="2nd cover" onclick="changeimage('thumbnail 1.jpeg')" height="200px" width="200px">
+        </div>
+        <div class="thumbnails">
+          <img src="thumbnail 2.jpeg" alt="3rd cover" onclick="changeimage('thumbnail 2.jpeg')"height="200px" width="200px">
+        </div>
+        <div class="thumbnails">
+          <img src="thumbnail 3.jpeg" alt="4th cover" onclick="changeimage('thumbnail 3.jpeg')" height="200px" width="200px">
+        </div>
+        <div class="thumbnails">
+          <img src="thumbnail 4.jpeg" alt="5th cover" onclick="changeimage('thumbnail 4.jpeg')" height="200px" width="200px">
+        </div>
+        <div class="thumbnails">
+          <img src="thumbnail 5.jpeg" alt="6th cover" onclick="changeimage('thumbnail 5.jpeg')" height="200px" width="200px">
+        </div>
+        <div class="thumbnails">
+          <img src="thumbnail 6.jpeg" alt="7th cover" onclick="changeimage('thumbnail 6.jpeg')" height="200px" width="200px">
+        </div>
+        <div class="thumbnails">
+          <img src="thumbnail 7.jpeg" alt="8th cover" onclick="changeimage('thumbnail 7.jpeg')" height="200px" width="200px">
+        </div>
+      </div>
+      <br>
+      <!--view more button-->
+      <a href="#"><button class="viewmore">view more</button></a>
+    </div>
+    <script>
+      function changeimage (imagesrc){
+        document.getElementById("mainimage").src = imagesrc;
+      }
+    </script>
+
+  </main>
+  <footer style="background-color:#71797e;">
+    <h2 style= "display:flex ; justify-content: center;">Come visit us and drive away with new cars</h2>
+    <h2 style="display: flex; justify-content: center;">Contact us on:</h2>
+    <!--contact details-->
+    <div class="contactdetails">
+     
+      <a href="mailto:kiambadealership@gmail.com"><img src="gm2.png" alt="gmaillogo" width="40px" height="40px"></a>
+      <a href="https://wa.me/254797420439" target="_blank"><img src="whatsapp2.png" alt="whatsapplogo" height="40px" width="40px"></a>
+      <a href="https://x.com/lec_musuke?t=cky3WTQHwWUJZURkVk5zwQ&s=09" ><img src="x.jpeg" alt="xlogo" height="40px" width="40px"></a>
+      <a href="http://instagram.com/kiamba_co?utm_source=qr"></p><img src="insta.jpeg" alt="iglogo" height="40px" width="40px"></a>
+      <a href="tel:+254712345678"><img src="phone.png" alt="phone logo" height="40px" width="40px"></a>
+
+    </div>
+    <!--copyright--> 
+    <div class="copyright">
+        <p>&copy; 2025 Kiamba car dealership. All Rights Reserved.</p>
+    </div>
+
+
+  </footer>
+</body>
+</html>
